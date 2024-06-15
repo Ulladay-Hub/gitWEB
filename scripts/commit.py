@@ -1,6 +1,7 @@
 import os
 import uuid
 import zipfile
+from datetime import datetime
 
 def create_commit(message, description):
     # Generate a unique commit ID
@@ -15,10 +16,13 @@ def create_commit(message, description):
     commit_dir = os.path.join(commits_dir, commit_id)
     os.makedirs(commit_dir)
 
-    # Create commit message file
+    # Create commit message file with timestamp
     commit_message_file = os.path.join(commit_dir, "commit_message.txt")
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open(commit_message_file, "w") as f:
-        f.write(f"Message: {message}\nDescription: {description}\n")
+        f.write(f"Timestamp: {timestamp}\n")
+        f.write(f"Message: {message}\n")
+        f.write(f"Description: {description}\n")
 
     # Create a zip file with current directory contents
     commit_zip_file = os.path.join(commit_dir, f"{commit_id}.zip")
@@ -35,3 +39,4 @@ if __name__ == "__main__":
     message = input("Enter commit message: ")
     description = input("Enter commit description: ")
     create_commit(message, description)
+
