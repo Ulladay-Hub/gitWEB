@@ -16,7 +16,7 @@ To use GitWEB locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/gitweb.git
+   git clone https://github.com/Ulladay-Hub/gitweb.git
    cd gitweb
    ```
 
@@ -67,7 +67,7 @@ Explore commit histories and messages using the BVP (Blame View Port). This feat
 
 ## Contributing
 
-Contributions to GitWEB are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
+Contributions to GitWEB are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. Or if you want, become part of the project, just leave a message in a pull request.
 
 ## License
 
@@ -81,5 +81,5 @@ GitHub: [Ulladay-Hub](https://github.com/Ulladay-Hub)
 
 ## Acknowledgements
 
-- Built with Rust programming language.
+- Built with Python programming language.
 - Inspired by Git version control system.
